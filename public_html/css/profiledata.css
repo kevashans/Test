@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body
+{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+a
+{
+    text-decoration: none;
+    color:white;
+}
+
+.container
+{
+    height: 460px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.login-form
+{
+    background-color: white;
+    padding: 0px;
+    font-size: 15px;
+}
+
+.blackcontainer
+{
+    width: 300px;
+    height: 135px;
+    background-color: #E1D9D1;
+    color: #363636;
+    padding: 5px;
+    position: relative;
+}
+
+.whitecontainer
+{
+    width: 300px;
+    height: 50px;
+    background-color: #363636;
+    color: #363636;
+    padding: 5px;
+}
+
+.profilepic img
+{
+    width: 20%;
+    height: 66px;
+    position: absolute;
+    background-color: #E1D9D1;
+    margin-top: -30px;
+    border: #E1D9D1 thick solid;
+    z-index: 0;
+    border-radius: 30px;
+}
+
+#name
+{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 80px;
+    font-weight: bold;
+}
+
+.password
+{
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 80px;
+}
+
+.button
+{       
+    background: #949494;
+    color: #363636;
+    border-style: outset;
+    border-color: #949494;
+    height: 25px;
+    width: 65px;
+    text-shadow: none;
+    margin-left: 118px;
+    margin-top: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.button:hover
+{
+    background-color: #646464;
+    color: #363636;
+}
+
+.link1
+{
+    position: absolute;
+    margin-left: -200px;
+    margin-bottom: -140px;
+    color: #363636;
+}
+
+.link2
+{
+    position: absolute;
+    margin-left: 200px;
+    margin-bottom: -140px;
+    color: #363636;
+}

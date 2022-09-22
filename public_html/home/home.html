@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Peak Films</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="#">
+        <link rel="icon" type="image/jpeg" href="../images/favicon.png">
+    </head>
+    <body>
+        <div id="navbarContainer">
+            <div id="navbar">
+                <h1>Peak Films</h1>
+                <div id="lang_selection">
+                    <select>
+                        <option value="en" onclick="changeLangEN()" selected>English</option>
+                        <option value="es" onclick="changeLangES()">Español</option>
+                    </select>
+                </div>
+                <div class="menu">
+                    <a href="../home/home.html" class="isActive"><p class="lang_en">Home</p><p class="lang_es">Inicio</p></a>
+                    <a href="../movies/grinch.html"><p class="lang_en">Movies</p><p class="lang_es">Películas</p></a>
+                    <a href="../movie_form/movieform.html"><p class="lang_en">Add a Movie</p><p class="lang_es">Añadir Película</p></a>
+                    <a href="../profile_data/profiledata.html"><p class="lang_en">My Profile</p><p class="lang_es">Mi Perfil</p></a>
+                    <a href="../login_form/loginform.html"><p class="lang_en">Sign in</p><p class="lang_es">Acceso</p></a>
+                </div>  
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div> 
+        </div>
+        <div id="main_content">
+            <!-- CSS Grid -->
+            <div class="grid-container home-grid-container">
+                <div class="grid-header">
+                    <div class="head-text">
+                        <p class="lang_en">Welcome to Peak Films!</p>
+                        <p class="lang_es">Bienvenido a Peak Films!</p>
+                    </div>
+                </div>
+                <div class="grid-slideshow">
+                    <!-- Slideshow Container -->
+                    <div class="slideshow-container"> 
+                        <!-- Images and Caption Text -->
+                        <div class="slide fade">
+                            <img src="../images/home_alone_screenshot1.png" alt="Home Alone" class="slide-image">
+                            <div class="slide-text lang_en">Home Alone</div><div class="slide-text lang_es">Solo en Casa</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/elf_screenshot1.png" alt="Elf" class="slide-image">
+                            <div class="slide-text lang_en">Elf</div><div class="slide-text lang_es">Elf</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/grinch_screenshot1.png" alt="Grinch" class="slide-image">
+                            <div class="slide-text lang_en">How The Grinch Who Stole Christmas</div><div class="slide-text lang_es">El Grinch</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/home_alone_screenshot2.png" alt="Home Alone" class="slide-image">
+                            <div class="slide-text lang_en">Home Alone</div><div class="slide-text lang_es">Solo en Casa</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/elf_screenshot2.png" alt="Elf" class="slide-image">
+                            <div class="slide-text lang_en">Elf</div><div class="slide-text lang_es">Elf</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/grinch_screenshot2.png" alt="Grinch" class="slide-image">
+                            <div class="slide-text lang_en">How The Grinch Who Stole Christmas</div><div class="slide-text lang_es">El Grinch</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/home_alone_screenshot3.png" alt="Home Alone" class="slide-image">
+                            <div class="slide-text lang_en">Home Alone</div><div class="slide-text lang_es">Solo en Casa</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/elf_screenshot3.png" alt="Elf" class="slide-image">
+                            <div class="slide-text lang_en">Elf</div><div class="slide-text lang_es">Elf</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/grinch_screenshot3.png" alt="Grinch" class="slide-image">
+                            <div class="slide-text lang_en">How The Grinch Who Stole Christmas</div><div class="slide-text lang_es">El Grinch</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/home_alone_screenshot4.png" alt="Home Alone" class="slide-image">
+                            <div class="slide-text lang_en">Home Alone</div><div class="slide-text lang_es">Solo en Casa</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/elf_screenshot4.png" alt="Elf" class="slide-image">
+                            <div class="slide-text lang_en">Elf</div><div class="slide-text lang_es">Elf</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/grinch_screenshot4.png" alt="Grinch" class="slide-image">
+                            <div class="slide-text lang_en">How The Grinch Who Stole Christmas</div><div class="slide-text lang_es">El Grinch</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-main">
+                    <div id="movie-selection">
+                        <p class="lang_en head-text">Our Top film picks for this Christmas:</p><p class="lang_es head-text">Nuestras mejores películas para esta Navidad:</p>
+                        <div class="movie-covers lang_en">
+                            <a href="../movies/grinch_movie.html"><img src="../images/grinch_movie.jpg" alt="Grinch"></a>
+                            <a href="../movies/home_alone_movie.html"><img src="../images/home_alone_movie.jpg" alt="Home Alone"></a>
+                            <a href="../movies/elf_movie.html"><img src="../images/elf_movie.jpg" alt="Elf"></a>
+                        </div>
+                        <div class="movie-covers lang_es">
+                            <a href="../movies/grinch_movie.html"><img src="../images/grinch_movie_es.jpg" alt="Grinch"></a>
+                            <a href="../movies/home_alone_movie.html"><img src="../images/home_alone_movie_es.jpg" alt="Home Alone"></a>
+                            <a href="../movies/elf_movie.html"><img src="../images/elf_movie.jpg" alt="Elf"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-footer">
+                </div>
+            </div>
+        </div>
+        <div class="mobileMenu">
+            <a href="../home/home.html" class="isActive"><p class="lang_en">Home</p><p class="lang_es">Inicio</p></a>
+            <a href="../movies/grinch.html"><p class="lang_en">Movies</p><p class="lang_es">Películas</p></a>
+            <a href="../movie_form/movieform.html"><p class="lang_en">Add a Movie</p><p class="lang_es">Añadir Película</p></a>
+            <a href="../profile_data/profiledata.html"><p class="lang_en">My Profile</p><p class="lang_es">Mi Perfil</p></a>
+            <a href="../login_form/loginform.html"><p class="lang_en">Sign in</p><p class="lang_es">Acceso</p></a>
+        </div> 
+        <footer> <!-- Footer -->
+            <span>&copy; Copyright 2021 - By Dillon, Kevas & Matthew SD1C</span>
+            <span id="date"></span>
+        </footer>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Movie</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/jpeg" href="../images/favicon.png">
+        <script src="../js/getvalue.js" type="text/javascript"></script>
+        <link href="../css/movieform.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <script src="../js/localstorage1(movieform).js" type="text/javascript"></script>
+        <div id="navbarContainer">
+            <div id="navbar">
+                <h1>Peak Films</h1>
+                <div id="lang_selection">
+                    <select>
+                        <option value="en" onclick="changeLangEN()" selected>English</option>
+                        <option value="es" onclick="changeLangES()">Español</option>
+                    </select>
+                </div>
+                <div class="menu">
+                    <a href="../home/home.html" class="isActive"><p class="lang_en">Home</p><p class="lang_es">Inicio</p></a>
+                    <a href="../movies/grinch.html"><p class="lang_en">Movies</p><p class="lang_es">Películas</p></a>
+                    <a href="#"><p class="lang_en">Add a Movie</p><p class="lang_es">Agregar una Película</p></a>
+                    <a href="../profile_data/profiledata.html"><p class="lang_en">My Profile</p><p class="lang_es">Mi Perfil</p></a>
+                    <a href="../login_form/loginform.html"><p class="lang_en">Sign in</p><p class="lang_es">iniciar sesión</p></a>
+                </div>  
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div> 
+        </div>
+        <div id="main_content">
+            <!-- CSS Grid -->
+            <div class="grid-container film-grid-container">
+                <div class="grid-header">
+                    <div class="lang_en head-text">My Movie</div>
+                    <div class="lang_es head-text">Solo en Casa</div>    
+                </div>
+                <div class="grid-slideshow">
+                    <!-- Slideshow Container -->
+                    <div class="slideshow-container"> 
+                        <!-- Images and Caption Text -->
+                        <div class="slide fade">
+                            <img src="../images/my_movie_screenshot.png" alt="My Movie" class="slide-image">
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/my_movie_screenshot.png" alt="My Movie" class="slide-image">
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/my_movie_screenshot.png" alt="My Movie" class="slide-image">
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/my_movie_screenshot.png" alt="My Movie" class="slide-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-cover">
+                    <div class="movie-cover lang_en">
+                        <img src="../images/my_movie.jpg" alt="My Movie">
+                    </div>
+                    <div class="movie-cover lang_es">
+                        <img src="../images/my_movie.jpg" alt="My Movie">
+                    </div>
+                </div>  
+                <div class="grid-main">
+                    <div id="paragraph">
+                        <div class="lang_en">
+                            <p>Title: <label id="title"></label></p><br>
+                            <p>Genre: <label id="genre"></label></p><br>
+                            <p>Type: <label id="title-type"></label></p><br>
+                            <p>Year: <label id="year"></label></p><br>
+                            <p>Director: <label id="director"></label></p><br>
+                            <p>Main Cast: <label id="cast1"></label>,<label id="cast2"></label>,<label id="cast3"></label> </p><br>
+                            <p>Adult: <label id="adult"></label></p>
+                            <script src="../js/localstorage2(movieform).js" type="text/javascript"></script>
+                        </div>
+                        <form onsubmit="clearMovieData()" action="../movie_form/movieform.html">
+                            <input type="submit" value="reset" class="button">
+                        </form>
+
+
+                        <a href="../home/home.html" class="link1">main menu</a>
+                        <a href="../movie_form/movieform.html" class="link2">add new movie</a>
+                    </div> 
+                </div>
+                <div class="grid-footer"></div>
+                <div class="grid-left-margin"></div>
+                <div class="grid-right-margin"></div>
+            </div>
+        </div>
+
+        <div class="mobileMenu">
+            <a href="../home/home.html" class="isActive"><p class="lang_en">Home</p><p class="lang_es">Inicio</p></a>
+            <a href="../movies/grinch.html"><p class="lang_en">Movies</p><p class="lang_es">Películas</p></a>
+            <a href="#"><p class="lang_en">Add a Movie</p><p class="lang_es">Agregar una Película</p></a>
+            <a href="../profile_data/profiledata.html"><p class="lang_en">My Profile</p><p class="lang_es">Mi Perfil</p></a>
+            <a href="../login_form/loginform.html"><p class="lang_en">Sign in</p><p class="lang_es">iniciar sesión</p></a>
+        </div> 
+        <footer> <!-- Footer -->
+            <span>&copy; Copyright 2021 - By Dillon, Kevas & Matthew SD1C</span>
+            <span id="date"></span>
+        </footer>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log in</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/loginform.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/jpeg" href="../images/favicon.png">
+        <script src="../js/error_messages_login.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div id="error"></div>
+        <div class="container" >
+            <div class="errorbox">
+                <div id ="nameErrorMessage"></div> 
+                <div id ="passwordErrorMessage"></div>
+            </div>
+            <form onsubmit = "return isFormValid()" action = "../profile_data/profiledata.html" class="login-form animate glow delay-1">
+                <h1 class="animate glow delay-2"> Sign in </h1>
+
+                <div class = "input-padding animate glow delay-3">
+                    <label for = "name"> Username</label>
+                    <input  type = "text" id = "name" name = "name"><label></label>
+                </div>
+                <div class="input-padding animate glow delay-3">
+                    <label for = "password">Password</label>
+                    <input type ="password" id = "password" name = "password" placeholder="At least 8 characters"><label></label>
+                </div>
+
+                <input type="submit" class="form-submit-button animate glow delay-4" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

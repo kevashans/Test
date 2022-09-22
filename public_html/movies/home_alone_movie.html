@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Alone</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/jpeg" href="../images/favicon.png">
+    </head>
+    <body>
+        <div id="navbarContainer">
+            <div id="navbar">
+                <h1>Peak Films</h1>
+                <div id="lang_selection">
+                    <select>
+                        <option value="en" onclick="changeLangEN()" selected>English</option>
+                        <option value="es" onclick="changeLangES()">Español</option>
+                    </select>
+                </div>
+                <div class="menu">
+                    <a href="../home/home.html"><p class="lang_en">Home</p><p class="lang_es">Inicio</p></a>
+                    <a href="../movies/grinch.html"><p class="lang_en">Movies</p><p class="lang_es">Películas</p></a>
+                    <a href="../movie_form/movieform.html"><p class="lang_en">Add a Movie</p><p class="lang_es">Añadir Película</p></a>
+                    <a href="../profile_data/profiledata.html"><p class="lang_en">My Profile</p><p class="lang_es">Mi Perfil</p></a>
+                    <a href="../login_form/loginform.html"><p class="lang_en">Sign in</p><p class="lang_es">Acceso</p></a>
+                </div>   
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div> 
+        </div>
+        <div id="main_content">
+            <!-- CSS Grid -->
+            <div class="grid-container film-grid-container">
+                <div class="grid-header">
+                    <div class="lang_en head-text">Home Alone</div>
+                    <div class="lang_es head-text">Solo en Casa</div>    
+                </div>
+            <div class="grid-slideshow">
+                <!-- Slideshow Container -->
+                <div class="slideshow-container"> 
+                    <!-- Images and Caption Text -->
+                    <div class="slide fade">
+                        <img src="../images/home_alone_screenshot1.png" alt="Home Alone" class="slide-image">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../images/home_alone_screenshot2.png" alt="Home Alone" class="slide-image">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../images/home_alone_screenshot3.png" alt="Home Alone" class="slide-image">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../images/home_alone_screenshot4.png" alt="Home Alone" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-cover">
+                <div class="movie-cover lang_en">
+                    <a href="../movies/home_alone_movie.html"><img src="../images/home_alone_movie.jpg" alt="Home Alone"></a>
+                </div>
+                <div class="movie-cover lang_es">
+                    <a href="../movies/home_alone_movie.html"><img src="../images/home_alone_movie_es.jpg" alt="Home Alone"></a>
+                </div>
+            </div>  
+                <div class="grid-main">
+                    <div id="paragraph">
+                        <div>
+                            <p class="lang_en">Title: Home Alone</p><p class="lang_es">Título: Solo en Casa</p><br>
+                            <p class="lang_en">Genre: Christmas Film</p><p class="lang_es">Género: Pelicula de Navidad </p><br>
+                            <p class="lang_en">Type: Film</p><p class="lang_es">Tipo: Película</p><br>
+                            <p class="lang_en">Year: 1990</p><p class="lang_es">Año: 1990</p><br>
+                            <p class="lang_en">Director: Chris Columbus</p><p class="lang_es">Director: Chris Columbus</p><br>
+                            <p class="lang_en">Writer: John Hughes</p><p class="lang_es">Escritor: John Hughes</p><br>
+                            <p class="lang_en">Main Cast: Macaulay Culkin, Joe Pesci, Daniel Stern, John Heard, Catherine O'Hara</p><p class="lang_es">Reparto Principal: Macaulay Culkin, Joe Pesci, Daniel Stern, John Heard, Catherine O'Hara</p><br>
+                            <p class="lang_en">About: An eight-year-old troublemaker must protect his house from a pair of burglars when he is accidentally left home alone by his family during Christmas vacation.</p><p class="lang_es">Sobre: Un alborotador de ocho años debe proteger su casa de un par de ladrones cuando su familia lo deja accidentalmente solo en casa durante las vacaciones de Navidad.</p><br>
+                            <p class="lang_en">Adult: No</p><p class="lang_es">Adulto: No</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="grid-footer"></div>
+                <div class="grid-left-margin"></div>
+                <div class="grid-right-margin"></div>
+            </div>
+        </div>
+        <div class="mobileMenu">
+            <a href="../home/home.html"><p class="lang_en">Home</p><p class="lang_es">Inicio</p></a>
+            <a href="../movies/grinch.html"><p class="lang_en">Movies</p><p class="lang_es">Películas</p></a>
+            <a href="../movie_form/movieform.html"><p class="lang_en">Add a Movie</p><p class="lang_es">Añadir Película</p></a>
+            <a href="../profile_data/profiledata.html"><p class="lang_en">My Profile</p><p class="lang_es">Mi Perfil</p></a>
+            <a href="../login_form/loginform.html"><p class="lang_en">Sign in</p><p class="lang_es">Acceso</p></a>
+        </div> 
+        <footer> <!-- Footer -->
+            <span>&copy; Copyright 2021 - By Dillon, Kevas & Matthew SD1C</span>
+            <span id="date"></span>
+        </footer>
+    <script src="../js/main.js"></script>
+    </body>
+</html>

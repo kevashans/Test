@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elf</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/jpeg" href="../images/favicon.png">
+    </head>
+    <body>
+        <div id="navbarContainer">
+            <div id="navbar">
+                <h1>Peak Films</h1>
+                <div id="lang_selection">
+                    <select>
+                        <option value="en" onclick="changeLangEN()" selected>English</option>
+                        <option value="es" onclick="changeLangES()">Español</option>
+                    </select>
+                </div>
+                <div class="menu">
+                    <a href="../home/home.html"><p class="lang_en">Home</p><p class="lang_es">Inicio</p></a>
+                    <a href="../movies/grinch.html"><p class="lang_en">Movies</p><p class="lang_es">Películas</p></a>
+                    <a href="../movie_form/movieform.html"><p class="lang_en">Add a Movie</p><p class="lang_es">Añadir Película</p></a>
+                    <a href="../profile_data/profiledata.html"><p class="lang_en">My Profile</p><p class="lang_es">Mi Perfil</p></a>
+                    <a href="../login_form/loginform.html"><p class="lang_en">Sign in</p><p class="lang_es">Acceso</p></a>
+                </div>   
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div> 
+        </div>
+        <div id="main_content">
+            <!-- CSS Grid -->
+            <div class="grid-container film-grid-container">
+                <div class="grid-header">
+                    <div class="lang_en head-text">Elf</div>
+                    <div class="lang_es head-text">Elf</div>    
+                </div>
+            <div class="grid-slideshow">
+                <!-- Slideshow Container -->
+                <div class="slideshow-container"> 
+                    <!-- Images and Caption Text -->
+                    <div class="slide fade">
+                        <img src="../images/elf_screenshot1.png" alt="Elf" class="slide-image">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../images/elf_screenshot2.png" alt="Elf" class="slide-image">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../images/elf_screenshot3.png" alt="Elf" class="slide-image">
+                    </div>
+                    <div class="slide fade">
+                        <img src="../images/elf_screenshot4.png" alt="Elf" class="slide-image">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-cover">
+                <div class="movie-cover lang_en">
+                    <a href="../movies/elf_movie.html"><img src="../images/elf_movie.jpg" alt="Elf"></a>
+                </div>
+                <div class="movie-cover lang_es">
+                    <a href="../movies/elf_movie.html"><img src="../images/elf_movie.jpg" alt="Elf"></a>
+                </div>
+            </div>  
+                <div class="grid-main">
+                    <div id="paragraph">
+                        <div>
+                            <p class="lang_en">Title: Elf</p><p class="lang_es">Título: Elf</p><br>
+                            <p class="lang_en">Genre: Christmas Film</p><p class="lang_es">Género: Pelicula de Navidad </p><br>
+                            <p class="lang_en">Type: Film</p><p class="lang_es">Tiop: Película</p><br>
+                            <p class="lang_en">Year: 2003</p><p class="lang_es">Año: 2003</p><br>
+                            <p class="lang_en">Director: Jon Favreau</p><p class="lang_es">Director: Jon Favreau</p><br>
+                            <p class="lang_en">Writer: David Berenbaum</p><p class="lang_es">Escritor: David Berenbaum</p><br>
+                            <p class="lang_en">Main Cast: Will Ferrell, James Caan, Zooey Deschanel, Mary Steenburgen, Edward Asner, Bob Newhart</p><p class="lang_es">Reparto Principal: Will Ferrell, James Caan, Zooey Deschanel, Mary Steenburgen, Edward Asner, Bob Newhart</p><br>
+                            <p class="lang_en">About: Raised as an over-sized elf, a human travels from the North Pole to NYC to meet his biological father who doesn't know he exists and is in desperate need of some Christmas spirit.</p><p class="lang_es">Sobre: Criado como un elfo de gran tamaño, un humano viaja desde el Polo Norte a Nueva York para encontrarse con su padre biológico que no sabe que existe y necesita desesperadamente un poco de espíritu navideño.</p><br>
+                            <p class="lang_en">Adult: No</p><p class="lang_es">Adulto: No</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="grid-footer"></div>
+                <div class="grid-left-margin"></div>
+                <div class="grid-right-margin"></div>
+            </div>
+        </div>
+        <div class="mobileMenu">
+            <a href="../home/home.html"><p class="lang_en">Home</p><p class="lang_es">Inicio</p></a>
+            <a href="../movies/grinch.html"><p class="lang_en">Movies</p><p class="lang_es">Películas</p></a>
+            <a href="../movie_form/movieform.html"><p class="lang_en">Add a Movie</p><p class="lang_es">Añadir Película</p></a>
+            <a href="../profile_data/profiledata.html"><p class="lang_en">My Profile</p><p class="lang_es">Mi Perfil</p></a>
+            <a href="../login_form/loginform.html"><p class="lang_en">Sign in</p><p class="lang_es">Acceso</p></a>
+        </div> 
+        <footer> <!-- Footer -->
+            <span>&copy; Copyright 2021 - By Dillon, Kevas & Matthew SD1C</span>
+            <span id="date"></span>
+        </footer>
+    <script src="../js/main.js"></script>
+    </body>
+</html>
